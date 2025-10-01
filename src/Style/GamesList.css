@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #fff0b5 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+}
+
+.games-container {
+  max-width: 1000px;
+  margin: 2.25rem auto;
+  padding: 1.25rem;
+  box-sizing: border-box;
+}
+
+.games-container h3 {
+  font-family: 'Press Start 2P', system-ui, sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #ffce00;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.games-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.game-card {
+  display: flex;
+  gap: 1rem;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 0.85rem;
+  align-items: flex-start;
+  box-shadow: 0 6px 18px rgba(20, 20, 40, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  overflow: hidden;
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(20, 20, 40, 0.12);
+}
+
+.game-cover {
+  width: 120px;
+  height: 180px;
+  flex: 0 0 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #efefef;
+  display: block;
+  position: relative;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+}
+
+.game-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.game-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffce00;
+  margin: 0 0 0.4rem 0;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.game-title a:hover {
+  text-decoration: underline;
+}
+
+.game-meta {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.genre-badge {
+  background: #fff3b3;
+  color: #ffce00;
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.game-placeholder {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 1100px) {
+  .game-cover {
+    width: 140px;
+    height: 210px;
+    flex: 0 0 140px;
+  }
+}
+
+@media (max-width: 420px) {
+  .game-card {
+    gap: 0.6rem;
+    padding: 0.6rem;
+  }
+  .game-cover {
+    width: 90px;
+    height: 135px;
+    flex: 0 0 90px;
+  }
+  .game-title {
+    font-size: 0.95rem;
+  }
+}
+
+.games-grid li:nth-child(1) .game-cover {
+  background-image: url('https://cdn2.steamgriddb.com/grid/121b81f7d167ca2c24fdab4f044048f8.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games-grid li:nth-child(1) .game-cover img {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.games-grid li:nth-child(2) .game-cover {
+  background-image: url('https://e.snmc.io/lk/g/x/72f985e228a8cdf14a07809d91b8867e/9217773');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games-grid li:nth-child(2) .game-cover img {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.games-grid li:nth-child(3) .game-cover {
+  background-image: url('https://e.snmc.io/lk/g/x/e37a4f8a9c2f6528daa1347be82d6ab2/12175133');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.games-grid li:nth-child(3) .game-cover img {
+  visibility: hidden;
+  pointer-events: none;
+}

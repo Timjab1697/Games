@@ -1,0 +1,60 @@
+/* Estilo para cuando se encuentra un juego */
+.JuegoEncontrado {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color:#1e1e2f;
+    color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .JuegoEncontrado h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffffff; 
+  }
+  
+  .JuegoEncontrado p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .JuegoEncontrado a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #ffce00;
+    color: #1e1e2f;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+  }
+  
+  .JuegoEncontrado a:hover {
+    background-color: #a38409;
+  }
+  
+ 
+  .ContainerJuegoNoEncontrado {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background-color: #ffdddd;
+    border: 1px solid #ff6b6b;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .ContainerJuegoNoEncontrado p {
+    margin-bottom: 1rem;
+    color: #a10000;
+    font-weight: bold;
+  }
+  
+  .ContainerJuegoNoEncontrado a {
+    color: #a10000;
+    text-decoration: underline;
+  }
+  

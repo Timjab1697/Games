@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* ================= HERO ================= */
+.home-hero {
+  position: relative;
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FtaW5nJTIwd2FsbHBhcGVyc3xlbnwwfHwwfHx8MA%3D%3D") no-repeat center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-content span {
+  color: #ffce00;
+  font-weight: 600;
+}
+
+/* ================= NAV ================= */
+.home-nav {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.home-btn {
+  background: #ffce00;
+  color: #1f1c2c;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn:hover {
+  background: #ffd633;
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.home-btn-outline {
+  background: transparent;
+  border: 2px solid #ffce00;
+  color: #ffce00;
+}
+
+.home-btn-outline:hover {
+  background: #ffce00;
+  color: #1f1c2c;
+}
+
+/* ================= CARDS ================= */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.home-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.home-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.home-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #ffce00;
+}
+
+.home-card p {
+  font-size: 1rem;
+  padding: 0 1rem 1.5rem;
+  color: #ccc;
+}
+
+.home-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= ANIMACIONES ================= */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ================= CARRUSEL ================= */
+.carousel-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.carousel-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffce00;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 25s linear infinite;
+}
+
+.carousel-track img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.carousel-track img:hover {
+  transform: scale(1.1);
+}
+
+/* Animación infinita */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= VIDEO ================= */
+.video-section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #ffce00;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-container iframe {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
