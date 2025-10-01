@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 body {
   margin: 0;
@@ -11,8 +10,8 @@ body {
 .home-hero {
   position: relative;
   height: 80vh;
-  background: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FtaW5nJTIwd2FsbHBhcGVyc3xlbnwwfHwwfHx8MA%3D%3D") no-repeat center
-    center/cover;
+ 
+
   display: flex;
   align-items: center;
   justify-content: center;

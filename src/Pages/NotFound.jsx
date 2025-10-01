@@ -11,7 +11,7 @@ export default function NotFound() {
 
         <h1>404</h1>
         <p>Lo sentimos, la página que buscas no existe.</p>
-        <Link to="/" className="notfound-link">
+        <Link to="/Home" className="notfound-link">
           Volver al inicio
         </Link>
       </div>

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import { getJobs } from "../Backend/getJobs";
 
 export default function GetJobs() {
   const [jobs, setJobs] = useState([]);
 
   useEffect(() => {
-    getJobs().then((data) => setJobs(data));
+    fetch("http://localhost:3001/jobs")
+      .then((res) => res.json())
+      .then((data) => setJobs(data));
   }, []);
 
   return (
@@ -14,7 +15,7 @@ export default function GetJobs() {
       <ul>
         {jobs.map((job) => (
           <li key={job.id}>
-            {job.titulo} - {job.empresa} ({job.modalidad})
+            {job.title} - {job.company} ({job.status})
           </li>
         ))}
       </ul>

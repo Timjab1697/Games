@@ -10,7 +10,7 @@ export default function GamesLayout() {
           <Link to="/games" onClick={() => {
     document.body.style.backgroundImage = "";
   }} className="games-link">Lista de juegos</Link>
-          <Link to="/" onClick={() => {
+          <Link to="/Home" onClick={() => {
     document.body.style.backgroundImage = "";
   }} className="games-link">Home</Link>
         </nav>
